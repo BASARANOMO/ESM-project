@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from utils import residual_chlorine_in_lake
+from chlorine_decay import residual_chlorine_in_lake
+from TP_process import growth_rate_TP
 
 # Chlorine
 c1 = 2  # 城市污水浓度，mg/L
@@ -19,6 +20,10 @@ tau1 = 0.6 # WWTP停留时间，h
 tau2 = 0 # 自然水体停留时间
 taur = 0 # 雨水管网停留时间
 t_max = 120
+
+# TP process params
+niu_max = 1 # TBD
+k_p = 0.01 # TBD
 
 # city params
 pop = 100000
